@@ -22,14 +22,14 @@ var surfaceArea = 4 * Math.PI * Math.pow(r, 2);
 function calculateVolume() {
     const diameter = parseFloat(document.getElementById('diameter').value);
     const volume = (4/3) * Math.PI * (diameter/2)**3;
-    document.getElementById('result').innerHTML = `A gömb térfogata ${volume.toFixed(2)}`;
+    document.getElementById('térfogat').innerHTML = `A gömb térfogata ${volume.toFixed(2)}`;
     volumewrite.value=volume;
 }
 
-function calculateVolume() {
+function calculateSurfaceArea() {
     const surfaceArea = parseFloat(document.getElementById('surfaceArea'));
-    const surface = (A=4 *Math.PI * r^2);
-    document.getElementById('result').innerHTML = `A gömb felszíne ${volume.toFixed(2)}`;
+    const surface = (A = 4 * Math.PI * r^2);
+    document.getElementById('felszín').innerHTML = `A gömb felszíne ${surfaceArea.toFixed(2)}`;
     surfacewrite.value=surface;
 }
 
